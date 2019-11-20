@@ -1,0 +1,92 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                               %
+%   Standard Cover page,                                        %
+%   Author: Yunfei Wu                                           %
+%   Date:   07-07-2003                                          %
+%   Modif.: Ronald Bos: allow for long title                    %
+%   Date:   05-04-2004                                          %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%-----------------------------------------------------------------------%
+%            Fixed part - Don't change any thing here                   %
+%-----------------------------------------------------------------------%
+\addtolength{\topmargin}{0.95in}
+
+\vspace*{-6.5cm}  \hspace*{-2.2cm}
+\parbox[h]{17.8cm}{
+
+\parbox[t]{4.3cm}{\hspace{-0.8cm}\includegraphics[width=4.5cm]{0_template/fig/CE_conv.png}}
+\hspace{-0.5cm}
+\parbox[b]{6cm}{\centering{\large \bf \LAB}
+\\ \LABADD \\ {\bf \WEB}
+\\\vspace{1.9cm}}\hfill
+\parbox[b]{1.5cm}{\raggedleft{\textcolor{red}{\bf \large
+\the\year}}\\\vspace{3.9cm}}
+}
+
+% begin mod Ronald Bos: removed shortstack to allow for a long title
+% (longer than one line)
+\hspace*{-2.8cm}
+\vspace*{-0.2cm}
+\parbox[h]{17.9cm}{
+	\begin{center}
+	\Huge{\bf MSc THESIS} \\
+	\vspace*{-0.5cm}
+	\textcolor{blue}{\vrule width 17.9cm height 3pt} \\
+	\huge{\bf \TITLE}
+	\end{center}
+}
+% end mod Ronald Bos
+
+% begin mod Guido de Goede and Jonathan Hofman: Added author name, as required on cover
+	\begin{center}
+	\large{\bf \AUTHOR}
+	\end{center}
+% end mod
+
+\vspace{0.5cm}
+\hspace{8cm}{\bf \large Abstract}\\ \vspace{0.5cm}
+
+\vspace*{15cm} \hspace*{-2.8cm}
+\parbox[h]{17.8cm}{
+\parbox[b]{4cm}{\hspace{-0.55cm} \includegraphics[width=4cm]{0_template/fig/TUDelft_conv.png}}
+\hfill
+\parbox[b]{14.2cm}{\raggedleft{\large \FAC}\\ \vspace{0.1cm}}}
+
+\vspace*{-17.5cm}
+\hspace*{-3cm}
+\parbox[h]{17.9cm}{
+\begin{wrapfigure}[20]{l}{6cm}
+    \hspace{-0.5cm}
+
+
+%----------------------------------------------------------------------------%
+%   fill in  research theme logo (eps file)                                  %
+%--------------------------------------------------------------------------- %
+    %\centering \includegraphics[width=5cm]{logo/molen.eps}    % fill in your research theme logo %
+
+
+%-----------------------------------------------------------------------%
+%            Fixed part - Don't change any thing here                   %
+%-----------------------------------------------------------------------%    
+     \vspace{1.5cm}                %to make v-space between two figures
+%     \hspace{-3.5cm}
+      \unitlength 1cm
+      \begin{center}
+      \begin{picture}(5,1.0)      %to draw second figure by picture env.
+           \put(0.0, 0.0){\framebox(4.5, 1){\bf \NR}}
+           \end{picture}
+          \end{center}
+\end{wrapfigure}
+\vspace{0.5cm}
+
+%----------------------------------------------------------------------------%
+%   fill in  the content of the abstract here (text part)                    %
+%--------------------------------------------------------------------------- %
+\noindent
+\input{0_template/abstract.tex}
+
+%-----------------------------------------------------------------------%
+%            Fixed part - Don't change any thing here                   %
+%-----------------------------------------------------------------------%   
+}

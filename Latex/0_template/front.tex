@@ -1,0 +1,68 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                               %
+%   Standard title page, no modifications required              %
+%   Author: Wiebe Cnossen                                       %
+%   Date:   August 11 1994                                      %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   Modified by Bao Linh Dang                                   %
+%   Date: 15/4/2003                                             %
+%   Modified by Ronald Bos: allow long TITLE                    %
+%   Date: 5/4/2004                                              %
+%   Put your abstract here(about 15 lines) and the rest should  %
+%   not be changed !!!                                          %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%-----------------------------------------------------------------------%
+%            Fixed part - Don't change any thing here                   %
+%-----------------------------------------------------------------------%
+\thispagestyle{plain} \cleardoublepage
+
+\topmargin -0.5in
+
+% Ronald Bos: removed shortstack and some font size tweaking
+% to allow a long TITLE (longer than one line)
+\begin{center}
+\huge \TITLE{} \\
+\normalsize
+\rule{5.5in}{1.5pt}
+\vskip 0.5cm
+by~\AUTHOR
+
+\vskip 0.5cm {\bf Abstract}
+\end{center}
+
+% Start your abstract here 
+
+\begin{small}
+%------------------------------------------------------------------------%
+%   Please fill in 
+%       1) the first letter of the first word of your thesis abstract    %
+%          into the first brace after \drop command                      %
+%       2) the left letters of the first word of your thesis abstract    %
+%          into the second brace                                         %
+%       3) the left part of your thesis abstract after the second brace  %
+%                                                                        %
+%------------------------------------------------------------------------%
+\
+\input{0_template/abstract.tex}
+
+\end{small}                                       % End of your abstract. 
+
+% End of your abstract. The next part is fixed, don't change anything
+%-----------------------------------------------------------------------%
+%            Fixed part - Don't change any thing here                   %
+%-----------------------------------------------------------------------%
+\vskip 15pt
+\begin{flushleft}
+\begin{sloppypar}
+\begin{tabular}{lll}
+{\bf Laboratory }&:& \begin{minipage}[t]{9cm}
+   {Computer Engineering}\end{minipage}    \\
+{\bf Codenumber }&:& \NR         \\ \\
+{\bf Committee Members }&:&
+\end{tabular}
+\end{sloppypar}
+\end{flushleft}
+
+\signaturepage \addtolength{\topmargin}{0.5in}
+%\end{document}
